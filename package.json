@@ -5,8 +5,5 @@
   "main": "index.js",
   "repository": "https://github.com/ableco/eslint-config",
   "author": "Able",
-  "license": "MIT",
-  "dependencies": {
-    "chalk": "^2.4.2"
-  }
+  "license": "MIT"
 }
