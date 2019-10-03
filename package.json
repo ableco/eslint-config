@@ -6,7 +6,7 @@
   "repository": "https://github.com/ableco/eslint-config",
   "author": "Able",
   "license": "MIT",
-  "peerDependencies": {
+  "dependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.5.1",
     "eslint-config-react-app": "^5.0.2",
