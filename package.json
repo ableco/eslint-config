@@ -1,6 +1,6 @@
 {
   "name": "@ableco/eslint-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ESLint configuration from https://github.com/ableco/coding-standards",
   "main": "index.js",
   "repository": "https://github.com/ableco/eslint-config",
