@@ -5,10 +5,10 @@ This repository provides recommended ESLint configuration for use on Able JavaSc
 ## Installation
 
 ### Using yarn:
-`yarn add @ableco/eslint-configuration --dev`
+`yarn add @ableco/eslint-config --dev`
 
 ### Using npm:
-`npm install @ableco/eslint-configuration --save-dev`
+`npm install @ableco/eslint-config --save-dev`
 
 ## Usage
 
