@@ -1,13 +1,13 @@
 {
   "name": "@ableco/eslint-config",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "ESLint configuration from https://github.com/ableco/coding-standards",
   "main": "index.js",
   "repository": "https://github.com/ableco/eslint-config",
   "author": "Able",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": "^6.0.0",
+    "eslint": "^5.0.0",
     "prettier": "^1.18.0"
   },
   "dependencies": {
@@ -18,7 +18,7 @@
     "eslint-plugin-react-hooks": "^2.1.1"
   },
   "devDependencies": {
-    "eslint": "^6.5.1",
-    "prettier": "^1.18.2"
+    "eslint": "^5.0.0",
+    "prettier": "^1.18.0"
   }
 }
