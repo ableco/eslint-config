@@ -1,6 +1,6 @@
 {
   "name": "@ableco/eslint-config",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "ESLint configuration from https://github.com/ableco/coding-standards",
   "main": "index.js",
   "repository": "https://github.com/ableco/eslint-config",
@@ -15,7 +15,8 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^2.1.1"
+    "eslint-plugin-react-hooks": "^2.1.1",
+    "eslint-plugin-unicorn": "^16.1.1"
   },
   "devDependencies": {
     "eslint": "^5.0.0",

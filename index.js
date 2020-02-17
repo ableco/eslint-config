@@ -6,7 +6,8 @@ module.exports = {
     jest: true
   },
   parser: "babel-eslint",
-  plugins: ["import", "react", "react-hooks", "prettier"],
+  extends: ["plugin:unicorn/recommended"],
+  plugins: ["import", "react", "react-hooks", "prettier", "unicorn"],
   rules: {
     "no-dupe-keys": "error",
     "no-undef": "error",
@@ -32,15 +33,15 @@ module.exports = {
     "react/no-string-refs": "error",
     "react/prop-types": ["error", { skipUndeclared: true }],
     "react/forbid-prop-types": "error",
-    "react/prefer-stateless-function": [
-      "error",
-      { ignorePureComponents: true }
-    ],
+    "react/prefer-stateless-function": "error",
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
-    "react-hooks/exhaustive-deps": "error", // Checks effect dependencies
+    "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
     "prettier/prettier": "error",
-    "no-console": ["error", { allow: ["warn", "error"] }],
-    "no-debugger": "error"
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-debugger": "error",
+    "unicorn/filename-case": "off",
+    "unicorn/prevent-abbreviations": "off",
+    "unicorn/import-index": "off"
   }
 };
 
