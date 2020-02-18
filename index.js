@@ -5,6 +5,7 @@ module.exports = {
     es6: true,
     jest: true
   },
+  parser: "babel-eslint",
   extends: ["plugin:unicorn/recommended"],
   plugins: ["import", "react", "react-hooks", "prettier", "unicorn"],
   rules: {
