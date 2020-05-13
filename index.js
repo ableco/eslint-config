@@ -41,7 +41,12 @@ module.exports = {
     "no-debugger": "error",
     "unicorn/filename-case": "off",
     "unicorn/prevent-abbreviations": "off",
-    "unicorn/import-index": "off"
+    "unicorn/import-index": "off",
+    "import/no-anonymous-default-export": ["error", {
+      "allowArrowFunction": false,
+      "allowAnonymousClass": false,
+      "allowAnonymousFunction": false,
+    }],
   }
 };
 
