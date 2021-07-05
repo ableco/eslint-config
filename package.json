@@ -7,8 +7,8 @@
   "author": "Able",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": "^6.1.0",
-    "prettier": "^1.18.0"
+    "eslint": "^6.0.0 || ^7.0.0",
+    "prettier": ">=1.18.0"
   },
   "dependencies": {
     "babel-eslint": "^10.0.3",
