@@ -20,7 +20,11 @@ module.exports = {
   settings: {
     //... your own settings, for example "import/resolver" or "react".
   },
-  extends: "@ableco"
+  extends: [
+    "plugin:@ableco/esnext",
+    "plugin:@ableco/react",
+    "plugin:@ableco/prettier"
+  ]
 };
 ```
 
