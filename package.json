@@ -6,8 +6,11 @@
   "repository": "https://github.com/ableco/eslint-config",
   "author": "Able",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "peerDependencies": {
-    "eslint": "^8.1.0",
+    "eslint": "^7.32.0",
     "prettier": "^2.4.1"
   },
   "dependencies": {
@@ -19,7 +22,11 @@
     "eslint-plugin-unicorn": "^37.0.1"
   },
   "devDependencies": {
-    "eslint": "^8.1.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-jest": "^27.3.1",
+    "eslint": "^7.32.0",
+    "jest": "^27.3.1",
     "prettier": "^2.4.1"
   }
 }

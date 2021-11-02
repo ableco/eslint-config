@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     node: true,
     es6: true,
-    jest: true
+    jest: true,
   },
   parser: "babel-eslint",
   extends: ["plugin:unicorn/recommended"],
@@ -17,8 +17,8 @@ module.exports = {
       {
         argsIgnorePattern: "^_",
         varsIgnorePattern: "^_",
-        ignoreRestSiblings: true
-      }
+        ignoreRestSiblings: true,
+      },
     ],
     "no-useless-constructor": "error",
     "no-var": "error",
@@ -37,17 +37,20 @@ module.exports = {
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
     "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
     "prettier/prettier": "error",
-    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-console": ["error", { allow: ["warn", "error"] }],
     "no-debugger": "error",
     "unicorn/filename-case": "off",
     "unicorn/prevent-abbreviations": "off",
     "unicorn/import-index": "off",
-    "import/no-anonymous-default-export": ["error", {
-      "allowArrowFunction": false,
-      "allowAnonymousClass": false,
-      "allowAnonymousFunction": false,
-    }],
-  }
+    "import/no-anonymous-default-export": [
+      "error",
+      {
+        allowArrowFunction: false,
+        allowAnonymousClass: false,
+        allowAnonymousFunction: false,
+      },
+    ],
+  },
 };
 
 // Globals added dynamically or add them in .eslintignore
