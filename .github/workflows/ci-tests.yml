@@ -1,0 +1,33 @@
+name: CI
+
+on: push
+
+jobs:
+  frontend-tests:
+    name: Frontend Tests
+    runs-on: ubuntu-18.04
+    env:
+      NODE_ENV: test
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "14"
+
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-frontend-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-frontend-
+      - name: Install Frontend Dependencies
+        run: yarn install --frozen-lockfile --prefer-offline
+
+      - name: Run Frontend Tests
+        run: |
+          yarn test
