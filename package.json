@@ -6,20 +6,27 @@
   "repository": "https://github.com/ableco/eslint-config",
   "author": "Able",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "peerDependencies": {
-    "eslint": "^6.1.0",
-    "prettier": "^1.18.0"
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.1"
   },
   "dependencies": {
-    "babel-eslint": "^10.0.3",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^2.1.1",
-    "eslint-plugin-unicorn": "^16.1.1"
+    "babel-eslint": "^10.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-unicorn": "^37.0.1"
   },
   "devDependencies": {
-    "eslint": "^6.1.0",
-    "prettier": "^1.18.0"
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-jest": "^27.3.1",
+    "eslint": "^7.32.0",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1"
   }
 }
